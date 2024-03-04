@@ -60,14 +60,17 @@ const closePort = (PortObj) => {
 /* Send Data */
 /* ******************************************** */
 exports.sendData = (data, portObj) => {
-  portObj.write(data, (err) => {
-    if (err) {
-      return console.log(`Error on Write: `, err.message);
-    }
-  });
-  return { status: 'Success', message: `Message Written Successfully..` };
+  try {
+    portObj.write(data, (err) => {
+      if (err) {
+        return console.log(`Error on Write: `, err.message);
+      }
+    });
+    return { status: 'Success', message: `Message Written Successfully..` };
+  } catch (err) {
+    return { status: 'Failed', message: `Error on Write: ${err.message}` };
+  }
 };
-
 /* ******************************************** */
 /* Read Data */
 /* ******************************************** */

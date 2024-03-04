@@ -4,100 +4,105 @@
 
 // Tank On
 const tankOnFunc = () => {
-  sendDataToPort("#TO;");
+  sendDataToPort('#TO;');
 };
 
 // Tank Off
 const tankOffFunc = () => {
-  sendDataToPort("#TC;");
+  sendDataToPort('#TC;');
 };
 
 // Forward
 const forwardFunc = () => {
-  sendDataToPort("#TF;");
+  sendDataToPort('#TF;');
 };
 
 // Backward
 const backwardFunc = () => {
-  sendDataToPort("#TB;");
+  sendDataToPort('#TB;');
 };
 
 // Left
 const leftFunc = () => {
-  sendDataToPort("#TL;");
+  sendDataToPort('#TL;');
 };
 
 // Right
 const rightFunc = () => {
-  sendDataToPort("#TR;");
+  sendDataToPort('#TR;');
 };
 
-// Stop
-const stopFunc = () => {
-  sendDataToPort("#TS;");
+// Stop Tank
+const stopTankFunc = () => {
+  sendDataToPort('#TS;');
+};
+
+// Stop ARM
+const stopArmFunc = () => {
+  sendDataToPort('#AS;');
 };
 
 // Rotate Left
 const rotateLeftFunc = () => {
-  sendDataToPort("#RL;");
+  sendDataToPort('#RL;');
 };
 
 // Rotate Right
 const rotateRightFunc = () => {
-  sendDataToPort("#RR;");
+  sendDataToPort('#RR;');
 };
 
 // Flipper Up
 const flipperUpFunc = () => {
-  sendDataToPort("#FU;");
+  sendDataToPort('#FU;');
 };
 
 // Flipper Down
 const flipperDownFunc = () => {
-  sendDataToPort("#FD;");
+  sendDataToPort('#FD;');
 };
 
 // Mark Mine
 const markMineMineFunc = () => {
-  sendDataToPort("#MM;");
+  sendDataToPort('#MM;');
 };
 
 // Base Left
 const baseLeftFunc = () => {
-  sendDataToPort("#BL;");
+  sendDataToPort('#BL;');
 };
 
 // Base Right
 const baseRightFunc = () => {
-  sendDataToPort("#BR;");
+  sendDataToPort('#BR;');
 };
 
 // Elbow Up
 const ElbowUpFunc = () => {
-  sendDataToPort("#EU;");
+  sendDataToPort('#EU;');
 };
 
 // Elbow Down
 const ElbowDownFunc = () => {
-  sendDataToPort("#ED;");
+  sendDataToPort('#ED;');
 };
 
 // Wrist Up
 const wristUpFunc = () => {
-  sendDataToPort("#WU;");
+  sendDataToPort('#WU;');
 };
 
 // Wrist Down
 const wristDownFunc = () => {
-  sendDataToPort("#WD;");
+  sendDataToPort('#WD;');
 };
 
 // Gripper Open
 const gripperOpenFunc = () => {
-  sendDataToPort("#GO;");
+  sendDataToPort('#GO;');
 };
 
 // Gripper Close
 const gripperCloseFunc = () => {
-  sendDataToPort("#GC;");
+  sendDataToPort('#GC;');
 };

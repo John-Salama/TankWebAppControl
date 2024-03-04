@@ -1,107 +1,107 @@
-const tankOn = document.getElementById("tankOn");
-const tankOff = document.getElementById("tankOff");
+const tankOn = document.getElementById('tankOn');
+const tankOff = document.getElementById('tankOff');
 
-const forwardBtn = document.getElementById("forwardBtn");
-const backwardBtn = document.getElementById("backwardBtn");
-const leftBtn = document.getElementById("leftBtn");
-const rightBtn = document.getElementById("rightBtn");
-const stopBtn = document.getElementById("stopBtn");
+const forwardBtn = document.getElementById('forwardBtn');
+const backwardBtn = document.getElementById('backwardBtn');
+const leftBtn = document.getElementById('leftBtn');
+const rightBtn = document.getElementById('rightBtn');
+const stopBtn = document.getElementById('stopBtn');
 
-const rotateLeftBtn = document.getElementById("rotateLeftBtn");
-const rotateRightBtn = document.getElementById("rotateRightBtn");
+const rotateLeftBtn = document.getElementById('rotateLeftBtn');
+const rotateRightBtn = document.getElementById('rotateRightBtn');
 
-const flipperUpBtn = document.getElementById("flipperUpBtn");
-const flipperDownBtn = document.getElementById("flipperDownBtn");
+const flipperUpBtn = document.getElementById('flipperUpBtn');
+const flipperDownBtn = document.getElementById('flipperDownBtn');
 
-const markMineMineBtn = document.getElementById("markMineBtn");
+const markMineMineBtn = document.getElementById('markMineBtn');
 
-const baseLeftBtn = document.getElementById("baseLeftBtn");
-const baseRightBtn = document.getElementById("baseRightBtn");
-const ElbowUpBtn = document.getElementById("ElbowUpBtn");
-const ElbowDownBtn = document.getElementById("ElbowDownBtn");
-const wristUpBtn = document.getElementById("wristUpBtn");
-const wristDownBtn = document.getElementById("wristDownBtn");
-const armStopBtn = document.getElementById("armStopBtn");
+const baseLeftBtn = document.getElementById('baseLeftBtn');
+const baseRightBtn = document.getElementById('baseRightBtn');
+const ElbowUpBtn = document.getElementById('ElbowUpBtn');
+const ElbowDownBtn = document.getElementById('ElbowDownBtn');
+const wristUpBtn = document.getElementById('wristUpBtn');
+const wristDownBtn = document.getElementById('wristDownBtn');
+const armStopBtn = document.getElementById('armStopBtn');
 
-const gripperOpenBtn = document.getElementById("gripperOpen");
-const gripperCloseBtn = document.getElementById("gripperClose");
+const gripperOpenBtn = document.getElementById('gripperOpen');
+const gripperCloseBtn = document.getElementById('gripperClose');
 
-tankOn.addEventListener("click", () => {
+tankOn.addEventListener('click', () => {
   tankOnFunc();
 });
 
-tankOff.addEventListener("click", () => {
+tankOff.addEventListener('click', () => {
   tankOffFunc();
 });
 
-forwardBtn.addEventListener("click", () => {
+forwardBtn.addEventListener('click', () => {
   forwardFunc();
 });
 
-backwardBtn.addEventListener("click", () => {
+backwardBtn.addEventListener('click', () => {
   backwardFunc();
 });
 
-leftBtn.addEventListener("click", () => {
+leftBtn.addEventListener('click', () => {
   leftFunc();
 });
 
-rightBtn.addEventListener("click", () => {
+rightBtn.addEventListener('click', () => {
   rightFunc();
 });
 
-stopBtn.addEventListener("click", () => {
-  stopFunc();
+stopBtn.addEventListener('click', () => {
+  stopTankFunc();
 });
 
-rotateLeftBtn.addEventListener("click", () => {
+rotateLeftBtn.addEventListener('click', () => {
   rotateLeftFunc();
 });
 
-rotateRightBtn.addEventListener("click", () => {
+rotateRightBtn.addEventListener('click', () => {
   rotateRightFunc();
 });
 
-flipperUpBtn.addEventListener("click", () => {
+flipperUpBtn.addEventListener('click', () => {
   flipperUpFunc();
 });
 
-flipperDownBtn.addEventListener("click", () => {
+flipperDownBtn.addEventListener('click', () => {
   flipperDownFunc();
 });
 
-markMineMineBtn.addEventListener("click", () => {
+markMineMineBtn.addEventListener('click', () => {
   markMineMineFunc();
 });
 
-baseLeftBtn.addEventListener("click", () => {
+baseLeftBtn.addEventListener('click', () => {
   baseLeftFunc();
 });
 
-baseRightBtn.addEventListener("click", () => {
+baseRightBtn.addEventListener('click', () => {
   baseRightFunc();
 });
 
-ElbowUpBtn.addEventListener("click", () => {
+ElbowUpBtn.addEventListener('click', () => {
   ElbowUpFunc();
 });
 
-ElbowDownBtn.addEventListener("click", () => {
+ElbowDownBtn.addEventListener('click', () => {
   ElbowDownFunc();
 });
 
-wristUpBtn.addEventListener("click", () => {
+wristUpBtn.addEventListener('click', () => {
   wristUpFunc();
 });
 
-wristDownBtn.addEventListener("click", () => {
+wristDownBtn.addEventListener('click', () => {
   wristDownFunc();
 });
 
-gripperOpenBtn.addEventListener("click", () => {
+gripperOpenBtn.addEventListener('click', () => {
   gripperOpenFunc();
 });
 
-gripperCloseBtn.addEventListener("click", () => {
+gripperCloseBtn.addEventListener('click', () => {
   gripperCloseFunc();
 });

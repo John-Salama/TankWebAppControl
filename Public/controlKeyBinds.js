@@ -1,100 +1,177 @@
 // key binds
 
-document.addEventListener("keydown", function (event) {
+document.addEventListener('keydown', function (event) {
   if (event.repeat) return;
   switch (event.key) {
-    case "z":
+    case 'z':
       tankOnFunc();
-      simulateHover(tankOn);
+      simulateHoverAuto(tankOn);
       break;
-    case "c":
+    case 'c':
       tankOffFunc();
-      simulateHover(tankOff);
+      simulateHoverAuto(tankOff);
       break;
-    case "w":
+    case 'w':
       forwardFunc();
       simulateHover(forwardBtn);
       break;
-    case "s":
+    case 's':
       backwardFunc();
       simulateHover(backwardBtn);
       break;
-    case "x":
-      stopFunc();
-      simulateHover(stopBtn);
+    case 'x':
+      stopTankFunc();
+      simulateHoverAuto(stopBtn);
       break;
-    case "a":
+    case 'a':
       leftFunc();
       simulateHover(leftBtn);
       break;
-    case "d":
+    case 'd':
       rightFunc();
       simulateHover(rightBtn);
       break;
-    case "q":
+    case 'q':
       rotateLeftFunc();
       simulateHover(rotateLeftBtn);
       break;
-    case "e":
+    case 'e':
       rotateRightFunc();
       simulateHover(rotateRightBtn);
       break;
-    case "r":
+    case 'r':
       flipperUpFunc();
       simulateHover(flipperUpBtn);
       break;
-    case "f":
+    case 'f':
       flipperDownFunc();
       simulateHover(flipperDownBtn);
       break;
-    case "p":
+    case 'p':
       markMineMineFunc();
-      simulateHover(markMineMineBtn);
+      simulateHoverAuto(markMineMineBtn);
       break;
-    case "u":
+    case 'u':
       baseLeftFunc();
       simulateHover(baseLeftBtn);
       break;
-    case "j":
+    case 'j':
       baseRightFunc();
       simulateHover(baseRightBtn);
       break;
-    case "i":
+    case 'i':
       ElbowUpFunc();
       simulateHover(ElbowUpBtn);
       break;
-    case "o":
+    case 'o':
       ElbowDownFunc();
       simulateHover(ElbowDownBtn);
       break;
-    case "k":
+    case 'k':
       wristUpFunc();
       simulateHover(wristUpBtn);
       break;
-    case "l":
+    case 'l':
       wristDownFunc();
       simulateHover(wristDownBtn);
       break;
-    case "n":
+    case 'n':
       gripperOpenFunc();
       simulateHover(gripperOpenBtn);
       break;
-    case "m":
+    case 'm':
       gripperCloseFunc();
       simulateHover(gripperCloseBtn);
       break;
   }
 });
 
+//send stop signal when key is released
+document.addEventListener('keyup', function (event) {
+  switch (event.key) {
+    case 'w':
+      stopTankFunc();
+      removeHover(forwardBtn);
+      break;
+    case 's':
+      stopTankFunc();
+      removeHover(backwardBtn);
+      break;
+    case 'a':
+      stopTankFunc();
+      removeHover(leftBtn);
+      break;
+    case 'd':
+      stopTankFunc();
+      removeHover(rightBtn);
+      break;
+    case 'q':
+      stopTankFunc();
+      removeHover(rotateLeftBtn);
+      break;
+    case 'e':
+      stopTankFunc();
+      removeHover(rotateRightBtn);
+      break;
+    case 'r':
+      stopTankFunc();
+      removeHover(flipperUpBtn);
+      break;
+    case 'f':
+      stopTankFunc();
+      removeHover(flipperDownBtn);
+      break;
+  }
+});
+
+document.addEventListener('keyup', function (event) {
+  switch (event.key) {
+    case 'u':
+      stopArmFunc();
+      removeHover(baseLeftBtn);
+      break;
+    case 'j':
+      stopArmFunc();
+      removeHover(baseRightBtn);
+      break;
+    case 'i':
+      stopArmFunc();
+      removeHover(ElbowUpBtn);
+      break;
+    case 'o':
+      stopArmFunc();
+      removeHover(ElbowDownBtn);
+      break;
+    case 'k':
+      stopArmFunc();
+      removeHover(wristUpBtn);
+      break;
+    case 'l':
+      stopArmFunc();
+      removeHover(wristDownBtn);
+      break;
+    case 'n':
+      stopArmFunc();
+      removeHover(gripperOpenBtn);
+      break;
+    case 'm':
+      stopArmFunc();
+      removeHover(gripperCloseBtn);
+      break;
+  }
+});
+
 function simulateHover(tagElement) {
-  tagElement.style.backgroundColor = "#9e9a75";
+  tagElement.style.backgroundColor = '#9e9a75';
+}
+
+function simulateHoverAuto(tagElement) {
+  tagElement.style.backgroundColor = '#9e9a75';
   setTimeout(() => {
-    resetButtonStyles();
+    tagElement.style.backgroundColor = '#ffffff';
   }, 300);
 }
-function resetButtonStyles() {
-  var buttons = document.getElementsByTagName("button");
-  for (var i = 0; i < buttons.length; i++) {
-    buttons[i].style.backgroundColor = "#ffffff";
-  }
+
+function removeHover(tagElement) {
+  tagElement.style.backgroundColor = '#ffffff';
 }
