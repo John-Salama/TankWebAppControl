@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tank Control App</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-bar">
+        <div class="logo">
+          <div class="logo-container">
+            <img src="./img/tank.svg" alt="" />
+          </div>
+          <h1 class="logo-text">Tank Control</h1>
+        </div>
+        <div class="nav-end">
+          <div class="connect-tab">
+            <a href="#connect-overlay"> Connect Port </a>
+            <div class="icon-container">
+              <a href="#connect-overlay">
+                <img src="./img/connect.svg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- live video -->
+    <section class="live-video">
+      <div class="section-title">
+        <h1>Live Video</h1>
+      </div>
+      <div class="container">
+        <div class="video-container">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/MtN1YnoL46Q?si=HgGGWkikSHOk3JHN"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <!-- control section -->
+    <section class="control-section">
+      <div class="part">
+        <div class="wheels-movement">
+          <h2>Tank Control</h2>
+          <!-- on and off -->
+          <div class="btn-action-group">
+            <button id="tankOn">On (Z)</button>
+            <button id="tankOff">Off (C)</button>
+          </div>
+          <h2>Wheels Movement</h2>
+          <div class="btn-action-group">
+            <button id="forwardBtn">Forward (W)</button>
+          </div>
+          <div class="btn-action-group">
+            <button id="leftBtn">Left (A)</button>
+            <button id="stopBtn">Stop (X)</button>
+            <button id="rightBtn">Right (D)</button>
+          </div>
+          <div class="btn-action-group">
+            <button id="backwardBtn">Backward (S)</button>
+          </div>
+        </div>
+      </div>
+      <div class="part">
+        <h2>Rotation</h2>
+        <div class="btn-action-group">
+          <button id="rotateLeftBtn">Rotate Left (Q)</button>
+          <button id="rotateRightBtn">Rotate Right (E)</button>
+        </div>
+
+        <h2>Flipper</h2>
+        <div class="btn-action-group">
+          <button id="flipperUpBtn">Flipper Up (R)</button>
+          <button id="flipperDownBtn">Flipper Down (F)</button>
+        </div>
+        <h2>Mark Mine</h2>
+        <div class="btn-action-group">
+          <button id="markMineBtn">Mark Mine (P)</button>
+        </div>
+      </div>
+      <div class="part">
+        <div class="arm-Movement">
+          <h2>Base</h2>
+          <div class="btn-action-group">
+            <!-- turn on arm and turn off -->
+            <button id="baseLeftBtn">Base Left (U)</button>
+            <button id="baseRightBtn">Base Right (J)</button>
+          </div>
+
+          <h2>Elbow</h2>
+          <div class="btn-action-group">
+            <button id="ElbowUpBtn">Elbow Up (I)</button>
+            <button id="ElbowDownBtn">Elbow Down (O)</button>
+          </div>
+
+          <h2>Wrist</h2>
+          <div class="btn-action-group">
+            <button id="wristUpBtn">Wrist Up (K)</button>
+            <button id="wristDownBtn">Wrist Down (L)</button>
+          </div>
+          <h2>Gripper</h2>
+          <div class="btn-action-group">
+            <!-- turn on arm and turn off -->
+            <button id="gripperOpen">Gripper Open (N)</button>
+            <button id="gripperClose">Gripper Close (M)</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="connect-overlay">
+      <a class="close" href="/Public/index.html"
+        ><img src="./img/Close.svg" alt=""
+      /></a>
+      <div class="container">
+        <div class="title">Select Port</div>
+        <div class="form-select-container">
+          <select
+            class="form-select"
+            aria-label="Default select example"
+            id="port-list"
+          >
+            <option selected>Select Port</option>
+            <option value="COM1">COM1</option>
+            <option value="COM2">COM2</option>
+            <option value="COM3">COM3</option>
+            <option value="COM4">COM4</option>
+            <option value="COM5">COM5</option>
+            <option value="COM6">COM6</option>
+            <option value="COM7">COM7</option>
+          </select>
+        </div>
+        <div class="actions">
+          <button id="connectBtn">
+            <img src="./img/connect.svg" alt="" />
+            Connect
+          </button>
+          <button id="disconnectBtn">
+            <img src="./img/disconnected.svg" alt="" />
+            Disconnect
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="uartUtility.js"></script>
+    <script src="connectAndDis.js"></script>
+    <script src="controlFunc.js"></script>
+    <script src="controlActions.js"></script>
+    <script src="controlKeyBinds.js"></script>
+  </body>
+</html>

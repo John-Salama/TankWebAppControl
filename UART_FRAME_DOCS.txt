@@ -1,0 +1,59 @@
+-> each frame start with '#' and ends with ';'
+______________________________________________
+Tank On  :: Frame: #TO;
+Description: Turns the tank on.
+----------------------------
+Tank Off :: Frame: #TF;
+Description: Turns the tank off.
+----------------------------
+Forward :: Frame: #CF;
+Description: Moves the tank forward.
+----------------------------
+Backward :: Frame: #CB;
+Description: Moves the tank backward.
+----------------------------
+Left :: Frame: #CL;
+Description: Turns the tank left.
+----------------------------
+Right :: Frame: #CR;
+Description: Turns the tank right.
+----------------------------
+Stop :: Frame: #CS;
+Description: Stops the movement of the tank.
+----------------------------
+Rotate Left :: Frame: #RL;
+Description: Rotates the tank to the left.
+----------------------------
+Rotate Right :: Frame: #RR;
+Description: Rotates the tank to the right.
+----------------------------
+Front Up :: Frame: #FU;
+Description: Lifts the front part of the tank.
+----------------------------
+Front Down :: Frame: #FD;
+Description: Lowers the front part of the tank.
+----------------------------
+Arm On :: Frame: #AO;
+Description: Turns on the tank's arm.
+----------------------------
+Arm Off :: Frame: #AF;
+Description: Turns off the tank's arm.
+----------------------------
+Arm Upper Left :: Frame: #UL;
+Description: Moves the tank's upper part to the left.
+----------------------------
+Arm Upper Right :: Frame: #UR;
+Description: Moves the tank's upper part to the right.
+----------------------------
+Arm Lower Left :: Frame: #LL;
+Description: Moves the tank's lower part to the left.
+----------------------------
+Arm Lower Right :: Frame: #LR;
+Description: Moves the tank's lower part to the right.
+----------------------------
+Reset Config :: Frame: #RC;
+Description: Resets the tank's configuration.
+----------------------------
+Mark Mine :: Frame: #MM;
+Description: Marks a mine using the tank's system.
+----------------------------

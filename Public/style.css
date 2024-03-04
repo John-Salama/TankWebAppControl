@@ -1,0 +1,230 @@
+@font-face {
+  font-family: main-font;
+  src: url(./fonts/OpenSans-VariableFont.ttf);
+}
+@font-face {
+  font-family: main-font-italic;
+  src: url(./fonts/OpenSans-Italic.ttf);
+}
+*,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: main-font;
+  font-weight: lighter;
+}
+body {
+  background-color: #1f2930;
+}
+.nav-bar {
+  background: linear-gradient(to right, #41533b, #604439);
+  color: #faf4f4;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 40px;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 20%;
+}
+.logo .logo-container {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+}
+.logo .logo-container img {
+  width: 100%;
+}
+.nav-end {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.connect-tab {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  cursor: pointer;
+  border: 1px solid #faf4f4;
+  padding: 5px;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+.connect-tab:hover {
+  background-color: #41533b;
+  color: #2c3a47;
+}
+.connect-tab a {
+  text-decoration: none;
+  color: #faf4f4;
+  font-weight: 600;
+  margin-right: 5px;
+}
+.connect-tab .icon-container {
+  width: 30px;
+  height: 30px;
+  /* padding-top: 10px; */
+  /* background-color: #2c3a47; */
+}
+.connect-tab .icon-container img {
+  width: 100%;
+}
+
+#connect-overlay {
+  position: fixed;
+  background-color: #2c3a47ed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+#connect-overlay:target {
+  display: flex;
+}
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  text-decoration: none;
+  color: #faf4f4;
+}
+.close img {
+  width: 30px;
+}
+#connect-overlay .container {
+  background: linear-gradient(to right, #41533b, #604439);
+  width: 50%;
+  padding: 40px 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#connect-overlay .container .title {
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #faf4f4;
+}
+#connect-overlay .container .form-select-container {
+  width: 300px;
+  margin-bottom: 30px;
+}
+#connect-overlay .container .form-select-container .form-select {
+  width: 60%;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-weight: 900;
+}
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 300px;
+}
+#connectBtn {
+  background-color: #151c21;
+  border: none;
+  border-radius: 10px;
+  color: #faf4f4;
+  font-weight: 600;
+  padding: 8px 10px;
+  padding-right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+}
+#connectBtn img {
+  width: 20px;
+  margin-right: 5px;
+}
+#disconnectBtn {
+  background-color: #151c21;
+  border: none;
+  border-radius: 10px;
+  color: #faf4f4;
+  font-weight: 600;
+  padding: 8px 10px;
+  padding-right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+}
+#disconnectBtn img {
+  width: 20px;
+  margin-right: 5px;
+}
+/* Sections Styles */
+/* Live Video */
+.live-video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 40px 0;
+  background-color: #151c21;
+  color: #faf4f4;
+}
+.video-container {
+  width: 100%;
+  background-color: #2c3a47;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 3px solid #41533b;
+}
+.control-section {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px 0;
+}
+.control-section h2 {
+  font-weight: 400;
+  color: #faf4f4;
+  border-bottom: 1px solid #faf4f4;
+}
+.control-section .part {
+  background: linear-gradient(to right, #41533b, #554840);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.btn-action-group {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.btn-action-group button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 5px;
+  transition: all 0.2s ease;
+  font-weight: 600;
+}
+
+.btn-action-group button:hover {
+  background-color: #9e9a75;
+}
