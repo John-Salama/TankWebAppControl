@@ -1,0 +1,65 @@
+Each frame starts with '#' and ends with ';'
+--------------------------------------------
+Tank On  :: Frame: #A;
+Description: Turns the tank on.
+--------------------------------------------
+Tank Off :: Frame: #B;
+Description: Turns the tank off.
+--------------------------------------------
+Tank Forward :: Frame: #C;
+Description: Moves the tank forward.
+--------------------------------------------
+Tank Backward :: Frame: #D;
+Description: Moves the tank backward.
+--------------------------------------------
+Tank Left :: Frame: #E;
+Description: Turns the tank left.
+--------------------------------------------
+Tank Right :: Frame: #F;
+Description: Turns the tank right.
+--------------------------------------------
+Tank Rotate Left :: Frame: #G;
+Description: Rotates the tank to the left.
+--------------------------------------------
+Tank Rotate Right :: Frame: #H;
+Description: Rotates the tank to the right.
+--------------------------------------------
+Tank Flipper Up :: Frame: #I;
+Description: Lifts the front part of the tank.
+--------------------------------------------
+Tank Flipper Down :: Frame: #J;
+Description: Lowers the front part of the tank.
+--------------------------------------------
+Tank Stop :: Frame: #K;
+Description: Stops the movement of the tank.
+--------------------------------------------
+Arm Base Left :: Frame: #L;
+Description: Moves the arm's base to the left.
+--------------------------------------------
+Arm Base Right :: Frame: #M;
+Description: Moves the arm's base to the right.
+--------------------------------------------
+Arm Elbow Up :: Frame: #N;
+Description: Moves the tank's arm upward.
+--------------------------------------------
+Arm Elbow Down :: Frame: #O;
+Description: Moves the tank's arm downward.
+--------------------------------------------
+Arm Wrist Up :: Frame: #P;
+Description: Moves the tank's wrist upward.
+--------------------------------------------
+Arm Wrist Down :: Frame: #Q;
+Description: Moves the tank's wrist downward.
+--------------------------------------------
+Arm Gripper Open :: Frame: #R;
+Description: Opens the tank's gripper.
+--------------------------------------------
+Arm Gripper Close :: Frame: #S;
+Description: Closes the tank's gripper.
+--------------------------------------------
+Arm Mark Mine :: Frame: #T;
+Description: Marks a mine using the tank's system.
+--------------------------------------------
+Arm Stop :: Frame: #U;
+Description: Stops the movement of the tank's arm.
+--------------------------------------------

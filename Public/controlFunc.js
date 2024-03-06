@@ -4,105 +4,105 @@
 
 // Tank On
 const tankOnFunc = () => {
-  sendDataToPort('#TO;');
+  sendDataToPort('#A;');
 };
 
 // Tank Off
 const tankOffFunc = () => {
-  sendDataToPort('#TC;');
+  sendDataToPort('#B;');
 };
 
-// Forward
+// Tank Forward
 const forwardFunc = () => {
-  sendDataToPort('#TF;');
+  sendDataToPort('#C;');
 };
 
-// Backward
+// Tank Backward
 const backwardFunc = () => {
-  sendDataToPort('#TB;');
+  sendDataToPort('#D;');
 };
 
-// Left
+// Tank Left
 const leftFunc = () => {
-  sendDataToPort('#TL;');
+  sendDataToPort('#E;');
 };
 
-// Right
+// Tank Right
 const rightFunc = () => {
-  sendDataToPort('#TR;');
+  sendDataToPort('#F;');
 };
 
-// Stop Tank
-const stopTankFunc = () => {
-  sendDataToPort('#TS;');
-};
-
-// Stop ARM
-const stopArmFunc = () => {
-  sendDataToPort('#AS;');
-};
-
-// Rotate Left
+// Tank Rotate Left
 const rotateLeftFunc = () => {
-  sendDataToPort('#RL;');
+  sendDataToPort('#G;');
 };
 
-// Rotate Right
+// Tank Rotate Right
 const rotateRightFunc = () => {
-  sendDataToPort('#RR;');
+  sendDataToPort('#H;');
 };
 
-// Flipper Up
+// Tank Flipper Up
 const flipperUpFunc = () => {
-  sendDataToPort('#FU;');
+  sendDataToPort('#I;');
 };
 
-// Flipper Down
+// Tank Flipper Down
 const flipperDownFunc = () => {
-  sendDataToPort('#FD;');
+  sendDataToPort('#J;');
 };
 
-// Mark Mine
-const markMineMineFunc = () => {
-  sendDataToPort('#MM;');
+// Tank Stop
+const stopTankFunc = () => {
+  sendDataToPort('#K;');
 };
 
-// Base Left
+// Arm Base Left
 const baseLeftFunc = () => {
-  sendDataToPort('#BL;');
+  sendDataToPort('#L;');
 };
 
-// Base Right
+// Arm Base Right
 const baseRightFunc = () => {
-  sendDataToPort('#BR;');
+  sendDataToPort('#M;');
 };
 
-// Elbow Up
+// Arm Elbow Up
 const ElbowUpFunc = () => {
-  sendDataToPort('#EU;');
+  sendDataToPort('#N;');
 };
 
-// Elbow Down
+// Arm Elbow Down
 const ElbowDownFunc = () => {
-  sendDataToPort('#ED;');
+  sendDataToPort('#O;');
 };
 
-// Wrist Up
+// Arm Wrist Up
 const wristUpFunc = () => {
-  sendDataToPort('#WU;');
+  sendDataToPort('#P;');
 };
 
-// Wrist Down
+// Arm Wrist Down
 const wristDownFunc = () => {
-  sendDataToPort('#WD;');
+  sendDataToPort('#Q;');
 };
 
-// Gripper Open
+// Arm Gripper Open
 const gripperOpenFunc = () => {
-  sendDataToPort('#GO;');
+  sendDataToPort('#R;');
 };
 
-// Gripper Close
+// Arm Gripper Close
 const gripperCloseFunc = () => {
-  sendDataToPort('#GC;');
+  sendDataToPort('#S;');
+};
+
+// Arm Mark Mine
+const markMineMineFunc = () => {
+  sendDataToPort('#T;');
+};
+
+// Arm Stop
+const stopArmFunc = () => {
+  sendDataToPort('#U;');
 };
