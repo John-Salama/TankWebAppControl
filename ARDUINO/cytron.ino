@@ -202,3 +202,94 @@ void spinAntiClockwise(uint8_t speed) {
   motor1.backward(speed);
   motor2.forward(speed);
 }
+//***************************************************************************************
+const int motor1PWM = 9; // PWM pin for motor 1
+const int motor1DIR1 = 8; // Direction pin 1 for motor 1
+const int motor1DIR2 = 7; // Direction pin 2 for motor 1
+const int motor2PWM = 10; // PWM pin for motor 2
+const int motor2DIR1 = 12; // Direction pin 1 for motor 2
+const int motor2DIR2 = 11; // Direction pin 2 for motor 2
+
+const int maxSpeed = 255; // Maximum speed
+const int accelerationSteps = 50; // Number of acceleration steps
+const int accelerationDelay = 20; // Delay between acceleration steps in milliseconds
+
+#include <CytronMotorDriver.h>
+
+CytronMD motor1(motor1PWM, motor1DIR1, motor1DIR2);
+CytronMD motor2(motor2PWM, motor2DIR1, motor2DIR2);
+
+void setup() {
+  pinMode(motor1PWM, OUTPUT);
+  pinMode(motor1DIR1, OUTPUT);
+  pinMode(motor1DIR2, OUTPUT);
+  pinMode(motor2PWM, OUTPUT);
+  pinMode(motor2DIR1, OUTPUT);
+  pinMode(motor2DIR2, OUTPUT);
+}
+
+void loop() {
+  // Your loop code here
+}
+
+void executeCommand(String command) {
+  // Your command execution code here
+}
+
+void gradualSpeedIncrease(int targetSpeed) {
+  int currentSpeed = 0;
+  int increment = maxSpeed / accelerationSteps;
+
+  while (currentSpeed < targetSpeed) {
+    currentSpeed += increment;
+    if (currentSpeed > targetSpeed) {
+      currentSpeed = targetSpeed;
+    }
+    
+    motor1.setSpeed(currentSpeed);
+    motor2.setSpeed(currentSpeed);
+    
+    delay(accelerationDelay);
+  }
+}
+
+void tankForward() {
+  motor1.forward();
+  motor2.forward();
+  gradualSpeedIncrease(maxSpeed);
+}
+
+void tankBackward() {
+  motor1.backward();
+  motor2.backward();
+  gradualSpeedIncrease(maxSpeed);
+}
+
+void tankLeft() {
+  motor1.backward();
+  motor2.forward();
+  gradualSpeedIncrease(maxSpeed);
+}
+
+void tankRight() {
+  motor1.forward();
+  motor2.backward();
+  gradualSpeedIncrease(maxSpeed);
+}
+
+void tankRotateLeft() {
+  motor1.backward();
+  motor2.forward();
+  gradualSpeedIncrease(maxSpeed);
+}
+
+void tankRotateRight() {
+  motor1.forward();
+  motor2.backward();
+  gradualSpeedIncrease(maxSpeed);
+}
+
+void tankStop() {
+  motor1.stop();
+  motor2.stop();
+}
