@@ -14,7 +14,7 @@ const connectPort = (port) => {
   }).done((response) => {
     console.log(response);
     if (response.status === 'Success') {
-      window.location.href = '/public/index.html';
+      window.location.href = '/index.html';
     }
   });
 };
@@ -59,7 +59,7 @@ const disconnect = () => {
     type: 'GET',
     success: function (res) {
       if (res.status === 'Success') {
-        window.location.href = '/public/index.html';
+        window.location.href = '/index.html';
       }
     },
   });
